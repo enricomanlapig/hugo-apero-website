@@ -11,7 +11,6 @@ categories:
 - Theme features
 ---
 
-{{< here >}}
 
 ## But first, a shortcode trick
 
