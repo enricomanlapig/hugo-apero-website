@@ -6,7 +6,6 @@ slug: []
 categories:
   - modeling
 tags:
-  - covi
   - covid-19
   - modeling
   - decision analysis
