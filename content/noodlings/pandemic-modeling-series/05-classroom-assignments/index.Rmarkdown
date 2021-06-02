@@ -1,7 +1,6 @@
 ---
 title: Classroom assignments
 author: Enrico Manlapig
-weight: 5
 date: '2021-04-04'
 slug: []
 categories:

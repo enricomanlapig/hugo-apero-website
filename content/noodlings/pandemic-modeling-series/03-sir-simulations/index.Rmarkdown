@@ -2,7 +2,6 @@
 title: SIR simulations
 author: Enrico Manlapig
 excerpt: 'Trying my hand at SIR modeling on a network'
-weight: 3
 date: '2021-03-07'
 slug: []
 categories:
