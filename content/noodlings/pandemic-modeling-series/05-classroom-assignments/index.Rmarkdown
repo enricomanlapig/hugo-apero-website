@@ -28,7 +28,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 At the beginning of the pandemic, when classes were moved online, I reached out to the college administration to see if they needed or wanted decision support.  I didn't really expect anyone to take me up on the offer - people have their own way of doing things and ORMS techniques can be hard to sell at the best of times.  Still, I was convinced that these tools can help, so I offered.
 
-To my surprise, I was invited to share some of my thoughts! I shared the [dynamic network](../2021-02-18-dynamic-network-visualization/index.html) animation, the [SIR models](../2021-03-07-sir-simulations/index.html) and even the [discrete event simulation of the Dining Commons](../2021-03-21-simulating-the-cafeteria/index.html).  In the next few posts, I'll you some  more prescriptive models, I thought might be most helpful.
+To my surprise, I was invited to share some of my thoughts! I shared the [dynamic network](../02-dynamic-network-visualization) animation, the [SIR models](../03-sir-simulations/) and even the [discrete event simulation of the Dining Commons](../04-simulating-the-cafeteria/).  In the next few posts, I'll you some  more prescriptive models, I thought might be most helpful.
 
 One of those, the only one that really got some real use was a class assignment model.  The thinking was this:  Most schools had gone online but we have relatively small classes and a small student body.  We also have beautiful mild weather all year around.  Would it be possible to teach in person while maintaining social distancing?  
 
