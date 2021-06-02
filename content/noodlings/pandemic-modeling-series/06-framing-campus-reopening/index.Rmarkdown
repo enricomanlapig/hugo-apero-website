@@ -13,10 +13,7 @@ tags:
   - influence diagrams
   - decision modeling
 subtitle: ''
-excerpt: 'At the beginning of Summer 2020, I offered to help the administration with some of its decision making.'
-images: ~
-series: ~
-layout: single
+excerpt: 'At the beginning of Summer 2020, I offered to help the administration with some of its decision making'
 ---
 
 
