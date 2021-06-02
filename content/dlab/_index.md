@@ -13,6 +13,7 @@ sidebar:
   title: Westmont Decision Lab
   description: |
     Welcome!  The Westmont Decision Lab is a collection of activities that serve my students and our community.  Our mission is to help people make better quality decisions.
+    
     <small>*Artwork: Our Country’s Story (3B) by [Sarrita and Tarisse King King](https://artisticsolutionsgroup.com.au/). Used with permission.*<small>
   author: ""
   text_link_label: ""
