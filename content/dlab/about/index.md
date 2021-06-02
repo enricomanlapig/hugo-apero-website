@@ -1,12 +1,11 @@
 ---
-title: About us
-subtitle: "Helping people make better decisions"
-author: Enrico Manlapig
+title: "About us"
+author: "Enrico Manlapig"
 date: '2021-06-01'
+subtitle: "Helping people make better decisions"
 excerpt: "Learn more about who we are and what we do"
-slug: []
-categories:
-  - decision lab
+categories: 
+- decision lab
 tags:
 - decision analysis
 - decision modeling
@@ -14,9 +13,11 @@ tags:
 - decision lab
 - education
 - consulting
-description: ~
-layout: standard
-show_title_as_headline: no
+links:
+- icon: door-open
+  icon_pack: fas
+  name: website
+  url: https://westmont.edu/decision-lab
 ---
 
 ![student writing on board](featured.jpg)
@@ -42,7 +43,7 @@ We think of high-quality decisions as those that exhibit 6 qualities:
 *	logical reasoning 
 *	a commitment to following-through
 
-![decision quality chain](DQChain.jpg)
+![decision quality chain](images/DQChain.png)
 
 
 A decision can only be as good as the weakest of this qualities are called the Decision Quality Chain.  Nonetheless, this notion of decision quality guides everything we do.
