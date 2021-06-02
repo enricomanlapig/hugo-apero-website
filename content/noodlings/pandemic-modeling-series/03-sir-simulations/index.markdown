@@ -1,7 +1,8 @@
 ---
 title: SIR simulations
 author: Enrico Manlapig
-excerpt: 'Trying SIR modeling on a network'
+excerpt: 'Trying my hand at SIR modeling on a network'
+weight: 3
 date: '2021-03-07'
 slug: []
 categories:
@@ -13,7 +14,6 @@ tags:
   - simulation
   - modeling
   - SIR
-series: Modeling through the pandemic
 ---
 
 
@@ -21,11 +21,11 @@ series: Modeling through the pandemic
 
 
 
-![contemporary aboriginal art](images/CrocodileDreaming1B.jpg)
+![contemporary aboriginal art](featured.jpeg)
 *Crocodiles Dreaming 1B by [Melanie Hava](http://www.artofmelaniehava.com/). Used with permission*
 
 
-In my [last post](../2021-02-18-dynamic-network-visualization/index.html), I shared some dynamic network animations.  Making these little movies, for all their flaws and simplifications, felt like broadly plausible representation of campus life.   But they didn't help me understand the mechanics of the  *flatten the curve* verbiage that everyone was using.  Intuitively, I understood that by social distancing, we would reduce the density of our social networks and transmission risks would be mitigated.  But how do they know it will work?  It feels like a very blunt tool.  Is quarantine and lock down enough?  What if, as many news agencies told us, many of the sick are asymptomatic?   What about the herd immunity approach?  How much immunity would we need? 
+In my [last post](../02-dynamic-network-visualization), I shared some dynamic network animations.  Making these little movies, for all their flaws and simplifications, felt like broadly plausible representation of campus life.   But they didn't help me understand the mechanics of the  *flatten the curve* verbiage that everyone was using.  Intuitively, I understood that by social distancing, we would reduce the density of our social networks and transmission risks would be mitigated.  But how do they know it will work?  It feels like a very blunt tool.  Is quarantine and lock down enough?  What if, as many news agencies told us, many of the sick are asymptomatic?   What about the herd immunity approach?  How much immunity would we need? 
 
 I did a little bit of reading into what epidemiologists do.  I had several friends studying epidemiology in graduate school but we didn't talk much about what they studied.  Now I really wanted to know: How do epidemiologists generate forecasts? How do they know where herd?  The simplest model I could find was the, so called, [Susceptible, Infected, or Recovered](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology) model.  The dynamics, at least in the most elementary presentations, didn't seem too crazy complicated... so I had a go!  
 
