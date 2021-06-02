@@ -1,7 +1,6 @@
 ---
 title: Introduction
 author: Enrico Manlapig
-weight: 1
 excerpt: 'This series is about how modeling helped me cope with pandemic anxiety'
 date: '2021-01-02'
 slug: []
@@ -11,10 +10,9 @@ tags:
   - modeling
   - covid-19
 subtitle: ''
-series: Modeling through the pandemic
 ---
 
-![contemporary aboriginal art](images/kalkatungu_country_20.jpg)
+![contemporary aboriginal art](featured.jpg)
 
 *Kalkatungu Country 20 by [Meshach Bruce](https://www.cungelellaart.com/). Used with permission.*
 
