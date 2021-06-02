@@ -3,8 +3,23 @@
 text_align_right: false
 show_title_as_headline: false
 headline: |
-  Hi, my name is Emily Cooper. Nice to meet you.
+  Hi there! Welcome.
 ---
 
 <!-- this is a subheadline -->
-I'm a driven 20-something American from Chicago who moved to Paris for an unexpected job opportunity. I've been tasked with bringing an American point of view to a venerable French marketing firm. :fr:
+
+Like you, I wear a lot of hats. Most of the time, I’m a husband, dad, professor, and foodie.  
+
+Perhaps we have some things in common.
+
+### I like technical things
+By training, I’m a microeconomic theorist. I studied economic statistics, operations research, and game theory through school.  My professional career has bounced between management consulting and academia. Both involve teaching and problem solving, both of which I love. 
+
+### I teach a lot
+I teach classes in operations research, decision analysis, finance, econometrics, game theory, behavioral economics, and microeconomic theory. My students think I’m a bit of a tyrant. I think I’m an idealist :)
+
+### I am food motivated
+Don’t tell anyone but I can be bribed with great pizza, sushi, or even a cup of coffee. I love Asian food and there is not nearly enough in my town.
+
+### I’m a complicated mixture of cultures
+I’m ethnically Filipino but I’ve never lived in the Philippines. Actually, I grew up in Australia and still think of the lovely city of Brisbane as my hometown. Most of my working life is in the US and I’ve lived on the East Coast, Mid-West, and on the West Coast. It’s all a bit of a complicated mess in my mind.

@@ -1,0 +1,79 @@
+---
+title: Dynamic network visualization
+author: Enrico Manlapig
+weight: 2
+date: '2021-02-16'
+slug: []
+categories:
+  - modeling
+tags:
+  - networks
+  - R
+  - simulation
+  - covid-19
+subtitle: ''
+excerpt: 'Visualizing viral spread through a small campus'
+images: ~
+---
+
+![contemporary aboriginal art](featured.jpeg)
+*Kalkatungu Country 05 by [Cheryl Perez](https://www.cungelellaart.com/). Used with permission.*
+
+
+In this post, I'm going to share the first model I built. This one imagines the campus where I work. At the time, there was still a hope that in-person classes would resume and that everything would go back to normal. Colleges and universities wanted to get students back on campus for pedagogical as well as financial reasons.
+
+All of this made me nervous. When people are desperate to open, it makes it difficult to assess interpret information well. We cease to think rationally so we're not making high quality decisions. I was nervous that desperate schools and communities would open prematurely and that cases would spiral out of control.
+
+So built this model to visualize what could happen. It assumes a lot of things:
+
+-   A campus of 1200 students and 100 faculty (no administrators, part time instructors, or other staff)
+
+-   Faculty teaching 3 classes that have between 5 and 40 students, and a mode of 15 students
+
+-   Each day consists of 6 teaching periods
+
+-   No lunch or extracurricular meetings
+
+-   At the end of the day students go to single, double, and triple sized dorm suites
+
+Obviously there are a lot of simplifications here. And I have no data to support these numbers, but they seemed okay-ish.
+
+I assumed that students that weren't in class would leave campus with probability 5% or that they would meet up with another random student on campus with probability 5%. No data for this.
+
+In terms of infections, I assumed that the campus had no cases and that all cases started somewhere in the community. I assumed that the community had 223 cases per 100k. Believe it or not, that was about where it was in April, 2020. Once infected, I assumed that a person would infect a contact with probability 5%. Again, just made this up. I also assumed instantaneous incubation. At the time, there was a lot of uncertainty around how long it took for an infected person to become symptomatic and to infectious to others.
+
+This little exercise was an opportunity to play around with some R packages that I hadn't used in a long while. Specifically, the [igraph](https://igraph.org/r/) and [ndtv](https://cran.r-project.org/web/packages/ndtv/) packages. The [networkDynamic documentation](https://www.rdocumentation.org/packages/networkDynamic/versions/0.10.1) was super helpful as was [Katya Ognyanova's tutorial](https://kateto.net/network-visualization).
+
+I ended up simulating a period of 3 days, which turned out like this:  
+(Please be patient, it may take a minute to load)
+
+```{r, include = FALSE}
+source("~/GitHub/coronavirus/CampusVizData.R")
+source("~/GitHub/coronavirus/CampusViz.R")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis'}
+my_output
+```
+
+At the time, this didn't look so bad. A handful of cases despite instantaneous incubation.
+
+Determined to freak myself out, I cranked up the cases in the community to 2230 cases per 100k. Curiously, this is more or less where California has been for the last few weeks.
+
+```{r, include = FALSE}
+source("~/GitHub/coronavirus/CampusVizData.R")
+
+outside_infection_prob <- 2230/100000
+
+source("~/GitHub/coronavirus/CampusViz.R")
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, results='asis', preview = TRUE}
+my_output
+```
+
+Although I was well and truly freaked out by this animation, thinking through the various mechanics of the simulation helped me feel calmer and a bit more in control.
+
+As I grew calmer, I also became curiouser and curiouser. When would we hit herd immunity? How many people will ultimately be infected? What if we could intervene to quarantine the sick? What does it take to *flatten the curve*?
+
+Well, that's for next time.
