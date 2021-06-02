@@ -15,7 +15,7 @@ subtitle: ''
 excerpt: 'A simple optimization model to clean the campus'
 ---
 
-![Contemporary aboriginal art](featured.jpg). 
+![Contemporary aboriginal art](featured.jpg)
 
 *Barramundi - Into the Current by [Melanie Hava](http://www.artofmelaniehava.com/). Used with permission*
 
