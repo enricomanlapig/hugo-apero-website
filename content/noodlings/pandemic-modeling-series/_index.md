@@ -16,6 +16,8 @@ sidebar:
   author: Enrico Manlapig
   description: |
     COVID-19 turned the whole world upside down.  This series describes how modeling helped me through.
+    
+    <small>*Artwork: Ancestors (K975) by [Sarrita King](https://artisticsolutionsgroup.com.au/). Used with permission.*<small>
   text_link_label: ""
   text_link_url: ""
   show_sidebar_adunit: false # show ad container
