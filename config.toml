@@ -29,7 +29,7 @@ enableEmoji = true
     
 [params]
   orgName = "Enrico Manlapig"
-  orgLocal = "Santa Barbara, California"
+  orgLocal = "Santa Barbara, CA"
   description = "Personal site of Enrico Manlapig"
   favicon = "/img/favicon.ico"
   logo = "/img/icon.png"
