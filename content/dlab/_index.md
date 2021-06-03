@@ -14,7 +14,7 @@ sidebar:
   description: |
     Welcome!  The Westmont Decision Lab is a collection of activities that serve my students and our community.  Our mission is to help people make better quality decisions.
     
-    <small>*Artwork: Our Country’s Story (3B) by [Sarrita and Tarisse King](https://artisticsolutionsgroup.com.au/). Used with permission.*<small>
+    <font size = "2">*Artwork: Our Country’s Story (3B) by [Sarrita and Tarisse King](https://artisticsolutionsgroup.com.au/). Used with permission.*</font>
   author: ""
   text_link_label: ""
   text_link_url: ""
@@ -23,6 +23,7 @@ sidebar:
 # set up common front matter for all individual pages inside project/
 cascade:
   type: project
+  layout: single
   show_author_byline: false
   show_post_date: false
   show_comments: false # see site config to choose Disqus or Utterances

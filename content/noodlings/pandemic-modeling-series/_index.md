@@ -17,7 +17,7 @@ sidebar:
   description: |
     COVID-19 turned the whole world upside down.  This series describes how modeling helped me through.
     
-    <small>*Artwork: Language of the Earth [Sarrita King](https://artisticsolutionsgroup.com.au/). Used with permission.*<small>
+    <font size = "2">*Artwork: Language of the Earth by [Sarrita King](https://artisticsolutionsgroup.com.au/). Used with permission.*</font>
   text_link_label: ""
   text_link_url: ""
   show_sidebar_adunit: false # show ad container
