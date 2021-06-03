@@ -1,7 +1,7 @@
 ---
 title: Connect
 name: Contact Us Form
-description: "I hope you enjoyed my space.  Feel free to reach out and say hello"
+description: "I hope you enjoyed my space.  Feel free to reach out and say hello!"
 date: 2021-05-31
 draft: false
 url: contact
