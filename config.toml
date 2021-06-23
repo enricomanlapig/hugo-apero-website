@@ -108,15 +108,20 @@ enableEmoji = true
     url = "/about/"
     weight = 1
   [[menu.header]]
-    name = "Noodlings"
-    title = "Noodlings"
-    url = "/noodlings/"
-    weight = 2
-  [[menu.header]]
     name = "Westmont Decision Lab"
     title = "Westmont Decision Lab"
     url = "/dlab/"
+    weight = 2
+  [[menu.header]]
+    name = "Noodlings"
+    title = "Noodlings"
+    url = "/noodlings/"
     weight = 3
+  [[menu.header]]
+    name = "Talks"
+    title = "Talks"
+    url = "/talks/"
+    weight = 4
 
     
   # Configure footer  
