@@ -21,6 +21,10 @@ draft: FALSE
 
 
 ![contemporary aboriginal art](featured.png)
+
+
+
+
 *Emu Dreaming by [Raymond Walters Penangke](https://artisticsolutionsgroup.com.au/). Used with permission*
 
 I'm always in two minds about web-scraping.  You can feel like a wizard when you you can identify parts of a webpage and make them appear somewhere, transformed, all without opening a browser.  At the same time, it feels icky.  The designer clearly intended you to experience their page in a certain way so it feels wrong to pick it apart to consume the bits you like.  You wouldn't do this to a beautiful and lovingly crafted piece of nigiri sushi.
