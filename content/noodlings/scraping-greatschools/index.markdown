@@ -12,7 +12,7 @@ tags:
   - decision lab
   - consulting
 subtitle: ''
-excerpt: 'Learning new things about webscraping'
+excerpt: 'Getting better at webscraping for a new DLab project'
 images: ~
 series: ~
 layout: single
@@ -21,7 +21,7 @@ draft: FALSE
 ---
 
 
-![contemporary aboriginal art](featured.png)
+![contemporary aboriginal art](featured.jpg)
 
 
 
@@ -32,7 +32,7 @@ I'm always in two minds about web-scraping.  You can feel like a wizard when you
 
 This dilemma is for chewing over another day.
 
-Today, I'm planting a new seed and this post will outline some of the things I've learned.  I'm preparing for a class that will be exploring the local market for faith-based schools. As part of this exercise, I'm writing some R scripts to help them scrape local school information from [GreatSchools.org](https://www.greatschools.org/).
+Today, I'm planting a new seed and this post will outline some of the things I've learned.  I'm preparing for [Decision Lab](../../dlab/) project that will be exploring the local market for faith-based schools. As part of this exercise, I'm writing some R scripts to help them scrape local school information from [GreatSchools.org](https://www.greatschools.org/).
 
 At this point, I have scripts to scrape a listing page and review pages.
 
