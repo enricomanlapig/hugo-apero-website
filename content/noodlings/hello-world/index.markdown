@@ -1,7 +1,7 @@
 ---
 title: "Hello world"
 author: "Enrico Manlapig"
-date: '2021-01-20'
+date: '2021-01-01'
 slug: []
 categories: []
 tags: []
