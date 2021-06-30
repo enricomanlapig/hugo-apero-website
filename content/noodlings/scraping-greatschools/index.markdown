@@ -3,7 +3,8 @@ title: Scraping GreatSchools
 author: Enrico Manlapig
 date: '2021-06-30'
 slug: []
-categories: []
+categories: 
+  - modeling
 tags:
   - R
   - modeling
@@ -41,4 +42,6 @@ The review pages were trickier.  I could still use the `rvest` + `V8` move to gr
 
 At the moment, I have everything driven by RMarkdown document for no particular reason.  I would like to try rolling this material into a package, which I think will be a [kinder tool](https://alison.netlify.app/ares-kind-tools/) for the students.
 
-One last thing before I leave the garden for the day, I was practicing bowing and nodding to the website because I wanted to be (and use) [`polite`](https://dmi3kno.github.io/polite/).  As I said earlier, I am a little bit bothered by this practice. But that's for another day. I want sushi.
+One last thing before I leave the garden for the day, I was practicing bowing and nodding to the website because I wanted to be (and use) [`polite`](https://dmi3kno.github.io/polite/).  As I said earlier, I am a little bit bothered by this practice. But that's for another day. 
+
+Hmm... Now I want some sushi 🍣
