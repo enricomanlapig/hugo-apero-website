@@ -56,17 +56,15 @@ Once in the dining room, there are 8 food stations
 | Gluten free               | 1                    | 10                      |
 | International (side room) | 15                   | 30                      |
 
-: Food stations
-
 I also assumed 2 drink stations where diners required 10 seconds to get a drink.
 
 Diners would need 10 minutes to scarf down their food before packing up their belongings. Before they leave, though, some visit the bathroom before busing their plate (average time of 10 seconds) and leaving.
 
-I went a little bit bonkers with the bathroom. I assumed 50% of of diners would visit the bathroom. Of these bathroom-goers, 70% had to go \#1. Men were a bit quicker at going \#1 at 1 minute, while women would take 2 minutes. Just a guess. 30% had to go \#2 and everyone took 4 minutes to go.
+I went a little bit bonkers with the bathroom. I assumed 50% of of diners would visit the bathroom. Of these bathroom-goers, 70% had to go \#1. Seemed reasonable to assume that men were a bit quicker at going \#1 at 1 minute, while women would take 2 minutes. Just a guess. 30% had to go \#2 and everyone took 4 minutes to go.
 
 ### Runtime
 
-I didn't think through the dynamics of the situation. I just plugged these parameters in and let it run.
+
 
 It was a lot of fun simulating this model. I printed fun little flags at each event. Here's the trajectory diner 65. The numbers in the first column are minutes.
 
