@@ -1,7 +1,7 @@
 ---
 title: Trying package development
 author: Enrico Manlapig
-exerpt: "I made a package! `floweR`"
+exerpt: "I made a package! Introducing my `floweR`"
 date: '2021-07-16'
 slug: []
 categories:
@@ -62,7 +62,7 @@ df %>%
   
   theme(legend.position = "none")
 
-ggsave("featured.png")
+#ggsave("featured.png")
 ```
 
 ![flower graphic](featured.png)
