@@ -11,7 +11,6 @@ tags:
   - package development
   - art
 subtitle: ''
-excerpt: ''
 images: ~
 series: ~
 layout: single
@@ -58,9 +57,7 @@ df %>%
                my_lwd = 7) +
   
   scale_colour_gradient(low = "purple", high = "pink") + 
-  
   scale_fill_manual(values = c("violet", "orange", "yellow")) + 
-  
   theme(legend.position = "none")
 ```
 
