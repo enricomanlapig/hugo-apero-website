@@ -93,6 +93,10 @@ enableEmoji = true
       icon      = "linkedin" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "http://www.linkedin.com/in/enricomanlapig"
+  [[params.social]]
+      icon      = "calendar" # icon name without the 'fa-'
+      icon_pack = "fa"
+      url       = "https://calendly.com/emanlapig"
 
 [taxonomies]
   category = "categories"
