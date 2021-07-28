@@ -25,8 +25,44 @@ Independently, I've been inspired to try making art with R. I'll write more abou
 
 So I had a go at both!  I made a little script that uses `dplyr::geom_curve` to draw little flowers.  They're not particularly realistic (yet!) -- they're a bit hacky, too symmetric, they need to be filled -- but it's a start.
 
-THEN! I've been following Jesse Mostipak (aka kierisi) on Twitter and Twitch and she was doing a couple of streams on making a package.  What perfect timing.  I followed along (badly!) but here I did it!  
+One of my favorite people on Twitter, [Jesse Mostipak](https://twitter.com/kierisi), did a  [Twitch stream](https://www.twitch.tv/kierisi) on package development.  What perfect timing! I followed along (badly!) but I did it!  
 
 So, a new seed for the garden! A digital [floweR](https://github.com/enricomanlapig/floweR)
+
+
+```{r draw_flower, warning=FALSE, message=FALSE}
+#devtools::install_github("enricomanlapig/floweR")
+
+library(floweR)
+library(dplyr)
+library(ggplot2)
+
+
+num_petals <- 7
+
+df <- data.frame(
+  group = c(rep("A", num_petals),
+            rep("B", num_petals),
+            rep("C", num_petals)),
+  metric = c(runif(num_petals, min = 1, max = 2)*0.5,
+             runif(num_petals, min = 1, max = 2),
+             runif(num_petals, min = 1, max = 2)*1.2)
+)
+
+df %>%
+  draw_flowers(group, metric, metric, 
+               my_hole_size = 0.5, 
+               my_curvature = 0.5, 
+               my_angle = 100, 
+               my_lwd = 7) +
+  
+  scale_colour_gradient(low = "purple", high = "pink") + 
+  
+  scale_fill_manual(values = c("violet", "orange", "yellow")) + 
+  
+  theme(legend.position = "none")
+
+ggsave("featured.png")
+```
 
 ![flower graphic](featured.png)
