@@ -1,7 +1,7 @@
 ---
 title: Trying package development
 author: Enrico Manlapig
-exerpt: "I made a package! Introducing my `floweR`"
+excerpt: 'I made a package! Introducing "floweR"'
 date: '2021-07-16'
 slug: []
 categories:
@@ -50,7 +50,9 @@ df <- data.frame(
 )
 
 df %>%
-  draw_flowers(group, metric, metric, 
+  draw_flowers(my_grouping_var = group, 
+               my_metric_var = metric, 
+               my_color_var = metric, 
                my_hole_size = 0.5, 
                my_curvature = 0.5, 
                my_angle = 100, 
