@@ -16,7 +16,7 @@ links:
 - icon: door-open
   icon_pack: fas
   name: slides
-  url: analytics-professional-pathways.netlify.app
+  url: https://analytics-professional-pathways.netlify.app
 - icon: github
   icon_pack: fab
   name: materials
