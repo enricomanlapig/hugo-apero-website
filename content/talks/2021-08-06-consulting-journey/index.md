@@ -16,11 +16,11 @@ links:
 - icon: door-open
   icon_pack: fas
   name: slides
-  url: https://enhancing-decisions-with-analytics.netlify.app/
+  url: analytics-professional-pathways.netlify.app
 - icon: github
   icon_pack: fab
   name: materials
-  url: https://github.com/enricomanlapig/talks/tree/master/enhancing_decisions_with_analytics
+  url: https://github.com/enricomanlapig/talks/tree/master/analytics_prof_pathways
 ---
 
 
