@@ -12,11 +12,11 @@ tags:
   - decision quality
   - westmont
 links:
-- icon: video-camera
+- icon: video
   icon_pack: fas
   name: video
   url: https://youtu.be/rgzEYj5wmBc
-- icon: newspaper-o
+- icon: newspaper
   icon_pack: fas
   name: article
   url: https://www.westmont.edu/decision-analysis-and-common-good
