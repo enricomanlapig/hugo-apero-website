@@ -1,7 +1,7 @@
 ---
 title: Decision Lab
 author: Enrico Manlapig
-except: "This talk showcased some of our project work at the [Decision Lab](../../dlab/).  It was presented at Westmont's annual [Lead Where You Stand](https://www.westmont.edu/lead) conference.  This version is lightly modified from the presentation version to hide some of the numbers and minimize size."
+excerpt: "This talk showcased some of our project work at the [Decision Lab](../../dlab/).  It was presented at Westmont's annual [Lead Where You Stand](https://www.westmont.edu/lead) conference.  This version is lightly modified from the presentation version to hide some of the numbers and minimize size."
 date: '2021-06-14'
 draft: FALSE
 slug: []
