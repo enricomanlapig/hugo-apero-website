@@ -13,50 +13,116 @@ tags:
   - Twitter
 ---
 
-![contemporary aboriginal art](featured.jpg)
-*Healing our land by [Sarrita King](https://artisticsolutionsgroup.com.au/). Used with permission.*
+![contemporary aboriginal art](featured.jpg) *Healing our land by [Sarrita King](https://artisticsolutionsgroup.com.au/). Used with permission.*
 
+I've been a fan of LaTeX for a long, long time. It's flexible, light, and it produces beautiful text. When I discovered [LyX](https://lyx.org) in graduate school, I thought had found my happy place. In industry, nothing was better for documenting the behavior of financial assets. And, when I started teaching, LyX was my go-to typesetting tool for pretty much everything.
 
+With the rise of Markdown and [RMarkdown](https://rmarkdown.rstudio.com/), though, I've grown typeset-curious. RMarkdown is great for adding commentary to my R analyses and, in my opinion, it's the only way to teach R-centric classes. For classes that don't require R, I would always go back to LyX.
 
-I've been a fan of LaTeX for a long, long time.  It's flexible, light, and it produces beautiful text. When I discovered [LyX](https://lyx.org) in graduate school, I thought had found my happy place. In industry, nothing was better for documenting the behavior of financial assets. And, when I started teaching, LyX was my go-to typesetting tool for pretty much everything.
+Why? What's so great about LyX? Lots! For all the good stuff (read: the math!), writing in LyX is the same as writing in LaTeX. LyX's "What You See Is What you Mean" philosophy, though, makes your text more readable. You don't have to interpret the code, you just read it. For all the annoying stuff, LyX just gets it done. Tables are more convenient to work with than in LaTeX, too. You want to merge cells or add a couple of borders? Easy. Footnotes, images, definitions, formatting, lists, and referencing - LyX just deals with it. No more annoying syntax errors!
 
-With the rise of Markdown and [RMarkdown](https://rmarkdown.rstudio.com/), though, I've grown typeset-curious.  RMarkdown is great for adding commentary to my R analyses and, in my opinion, it's the only way to teach R-centric classes. For classes that don't require R, I would always go back to LyX.
+My all time favorite feature of LyX, especially as an instructor, is *branches*. You can create one branch for student space and another branch for yourself. I can share prompts with students and keep answers and talking points for myself. There's no repeating yourself - you just put your comments in another branch and you're good to go. Branches are precision instruments, too. You can just as easily branch a paragraph, a single character, or even single entry in a table if you want to.
 
-Why? What's so great about LyX? Lots!  For all the good stuff (read: the math!), writing in LyX is the same as writing in LaTeX. LyX's "What You See Is What you Mean" philosophy, though, makes your text more readable.  You don't have to interpret the code, you just read it.  For all the annoying stuff, LyX just gets it done.  Tables are more convenient to work with than in LaTeX, too.  You want to merge cells or add a couple of borders? Easy. Footnotes, images, definitions, formatting, lists, and referencing - LyX just deals with it.  No more annoying syntax errors!
+At the same time, the incredible people at [RStudio](https://www.rstudio.com/) keep adding features to their own IDE: RStudio Desktop. It's arguably the industry standard IDE for anyone working in R. Its community is engaged and enthusiastic so RStudio and RMarkdown is constantly developing and improving and, *gulp*, it can do almost everything that LyX+LaTeX can do. Readability? Check! Table support? Check! Lists, images, referencing? Check! Check! Check![^1]
 
-My all time favorite feature of LyX, especially as an instructor, is *branches*. You can create one branch for student space and another branch for yourself. I can share prompts with students and keep answers and talking points for myself. There's no repeating yourself - you just put your comments in another branch and you're good to go. Branches are precision instruments, too.  You can just as easily branch a paragraph, a single character, or even single entry in a table if you want to. 
+[^1]: In many ways it can many things LyX and LaTeX don't do very well. I've never had much success with [Sweave](https://wiki.lyx.org/Glossary/Sweave) or doing algebra with [Maxima](https://maxima.sourceforge.io/), for example.
 
-At the same time, the incredible people at [RStudio](https://www.rstudio.com/) keep adding features to their own IDE: RStudio Desktop. It's arguably the industry standard IDE for anyone working in R. Its community is engaged and enthusiastic so RStudio and RMarkdown is constantly developing and improving and, *gulp*, it can do almost everything that LyX+LaTeX can do.  Readability? Check! Table support? Check! Lists, images, referencing? Check! Check! Check![^1] 
+So, like a fanatic, I'm holding out because of LyX's branches. I had briefly looked into parameterising code chunks in R. I know you can some evaluate some chunk and not others With the ability to call images from a chunk, RMarkdown is almost almost there. I could `kable` a table, but I'd have to construct an object first. Meh. And text would be annoying. Plain text through `paste` is fine but But how would you pass an equation, a proof, or a table?
 
-[^1]: In many ways it can many things LyX and LaTeX don't do very well.  I've never had much success with [Sweave](https://wiki.lyx.org/Glossary/Sweave) or doing algebra with [Maxima](https://maxima.sourceforge.io/), for example.
+As part of my peek into social media, I decided to ask Twitter. I wasn't sure I'd get a reply, in truth: A few of my past questions fell on deaf ears but when [\@Kierisi](https://twitter.com/kierisi) retweeted my question, the internet started talking to me! `r emojifont::emoji("open_mouth")`
 
-So, like a fanatic, I'm holding out because of LyX's branches. I had briefly looked into parameterising code chunks in R.  I know you can some evaluate some chunk and not others  With the ability to call images from a chunk, RMarkdown is almost almost there.  I could `kable` a table, but I'd have to construct an object first. Meh. And text would be annoying. Plain text through `paste` is fine but  But how would you pass an equation, a proof, or a table?
-
-As part of my peek into social media, I decided to ask Twitter.  I wasn't sure I'd get a reply, in truth: A few of my past questions fell on deaf ears but when [@Kierisi](https://twitter.com/kierisi) retweeted my question, the internet started talking to me! `r emojifont::emoji("open_mouth")`
-
-Now I know.  It's possible.
+Now I know. It's possible.
 
 First, you will need to include your branching switch in your YAML. I've called mine `is_handout`.
-![image of code with parameter highlighted](./images/yaml.png)
+
+    ---
+    title: "Branching with RMarkdown and LaTex
+    output:
+      pdf_document: default
+    params:
+      is_handout: TRUE
+    ---
+
 Then, tell the code chunk you want to toggle to use LaTeX rather than pandoc with an `include=` option.
 
-![Image of code chunk with option highlighted](./images/blank_space.png)
+    ```{r blank_space_5cm, include=(params$is_handout & knitr::is_latex_output())}`r ''`
+    knitr::asis_output('\\vspace{5cm}')
+    ```
 
-The code ``\\vspace{5cm}`` inserts a vertical space where students can write.  *This* is LaTeX! Well, sort of.  It has an extra backslash so R knows I really mean to insert a backslash.
+The code `\\vspace{5cm}` inserts a vertical space where students can write. *This* is LaTeX! Well, sort of. It has an extra backslash so R knows I really mean to insert a backslash.
 
-For my notes, we can pass `!is_notes`.  Again, we're writing plain LaTeX but inserting an additional backslash every time.
+For my notes, we can pass `!is_notes`. Again, we're writing plain LaTeX but inserting an additional backslash every time.
 
-![Image of code chunk with option highlighted](./images/eqnarray.png)
+    ```{r q1_ans, include=(!params$is_handout & knitr::is_latex_output())}`r ''`
+    knitr::asis_output('
+    The answer is 
 
+    \\begin{eqnarray*}
+    \\frac{4x}{2} 
+      &= \\frac{4}{2}x \\\\
+      &= 2x
+    \\end{eqnarray*}
 
-We can do tables, too! Here you can see the first table with a blank space an the second with a `\\mathbf{d}` in the bottom right corner.
+    ')
+    ```
 
-![Image of code chunk with option highlighted](./images/table.png)
+We can do tables, too! Here's a LaTeX table with a blank in the bottom right cell.
 
-I don't want to say, yet, that RMarkdown can do *everything* that I did in LyX.  Clearly, there are a lot of backspaces.  This code is not as readable or as elegant LyX's method.  And it's not exactly the high precision tool that LyX is: I needed to copy the whole table to insert one letter.
+    ```{r q2_blank_tbl, include=(params$is_handout & knitr::is_latex_output())}`r ''`
+    knitr::asis_output('
+    \\begin{tabular}{|c|c|}
+    \\hline 
 
-But it's pretty close!  Thank you internet!
+    $a$ & $b$ \\tabularnewline
+    \\hline 
+
+    $c$ &  \\tabularnewline
+    \\hline 
+
+    \\end{tabular}
+    ')
+    ```
+
+Here it is with the blank cell populated.
+
+    ```{r q2_blank_tbl, include=(!params$is_handout & knitr::is_latex_output())}`r ''`
+    knitr::asis_output('
+    \\begin{tabular}{|c|c|}
+    \\hline 
+
+    $a$ & $b$ \\tabularnewline
+    \\hline 
+
+    $c$ & $\\mathbf{d}$ \\tabularnewline
+    \\hline 
+
+    \\end{tabular}
+    ')
+    ```
+Notice again that, I've asked for `!params$is_handout`, since answer should only be available to me.
+
+So it's possible!
+
+I don't want to say, yet, that RMarkdown can do *everything* that I did in LyX. Clearly, there are a lot of backspaces. This code is not as readable or as elegant LyX's method. And it's not exactly the high precision tool that LyX is: I needed to copy the whole table to insert one letter.
+
+But it's pretty close! Thank you internet!
 
 For all of these little code snippets together, head over to [my GitHub](https://github.com/enricomanlapig/useful_snippets/tree/master/branching_with_latex).
 
-I'm going to start moving some things over...
+So even though it's possible, I'm not a 100% sure it's worth moving over yet. The more I think about it, I wonder how hard it would be to create an RMarkdown engine. A code chunk like this would be ideal.
+
+    ```{rmd, include = is_notes}`r ''`
+    # A header
+
+    Some text
+
+    1. An ordered list item
+    1. Another one
+
+    Look at my pretty equation:
+    $$f(x) = 3x + 1$$
+    ```
+
+### More thoughts...
+
+I discovered now that there are [other engines](https://bookdown.org/yihui/rmarkdown/language-engines.html) that might do what I want. For example, there are `exercise` and `solution` engines in `bookdown`. This might be the way to go but I don't know `bookdown` (yet). It's not clear whether tables and images will be easy to work with, either.
