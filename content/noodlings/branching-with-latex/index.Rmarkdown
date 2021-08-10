@@ -1,7 +1,7 @@
 ---
 title: Branching with LaTeX
 author: Enrico Manalpig
-excerpt: "Branching like LyX"
+excerpt: "My slow transition away from LyX"
 date: '2021-08-09'
 slug: []
 categories:
@@ -53,6 +53,8 @@ We can do tables, too! Here you can see the first table with a blank space an th
 
 I don't want to say, yet, that RMarkdown can do *everything* that I did in LyX.  Clearly, there are a lot of backspaces.  This code is not as readable or as elegant LyX's method.  And it's not exactly the high precision tool that LyX is: I needed to copy the whole table to insert one letter.
 
-But it's pretty close!
+But it's pretty close!  Thank you internet!
+
+For all of these little code snippets together, head over to [my GitHub](https://github.com/enricomanlapig/useful_snippets/tree/master/branching_with_latex).
 
 I'm going to start moving some things over...
