@@ -18,17 +18,19 @@ tags:
 
 
 
-I've been a fan of LaTeX for a long time.  It's so flexible and beautiful and light. And, when I discovered LyX in graduate school, I had found my happy place. When I started teaching, LyX was my go-to typesetting tool.
+I've been a fan of LaTeX for a long, long time.  It's flexible, light, and it produces beautiful text. When I discovered [LyX](https://lyx.org) in graduate school, I thought had found my happy place. In industry, nothing was better for documenting the behavior of financial assets. And, when I started teaching, LyX was my go-to typesetting tool for pretty much everything.
 
-With the rise of Markdown and RMarkdown over the last few years, I've grown typeset-curious.  RMarkdown great for taking notes and writing things that were R-centric.  And it's the only way to teach R-centric classes. But for classes that don't require R, I would always go back to LyX.
+With the rise of Markdown and [RMarkdown](https://rmarkdown.rstudio.com/), though, I've grown typeset-curious.  RMarkdown is great for adding commentary to my R analyses and, in my opinion, it's the only way to teach R-centric classes. For classes that don't require R, I would always go back to LyX.
 
-Why? What's so great about LyX? Lots!  For all the good stuff (the math!), writing in LyX is the same as writing LaTeX. But the focus on "What You See Is What you Mean" makes your text much more readable.  For all the annoying stuff, LyX just gets it done.  Tables are more convenient to work with than in LaTeX. Footnotes, images, lists, and referencing - LyX just deals with it.  No more annoying syntax errors!
+Why? What's so great about LyX? Lots!  For all the good stuff (read: the math!), writing in LyX is the same as writing in LaTeX. LyX's "What You See Is What you Mean" philosophy, though, makes your text more readable.  You don't have to interpret the code, you just read it.  For all the annoying stuff, LyX just gets it done.  Tables are more convenient to work with than in LaTeX, too.  You want to merge cells or add a couple of borders? Easy. Footnotes, images, definitions, formatting, lists, and referencing - LyX just deals with it.  No more annoying syntax errors!
 
-My all time favorite feature of LyX, though, is *branches*. You can create one branch for student space and another branch for yourself. I can share prompts with students and keep answers and talking points for myself. These branches are precision instruments, too.  You can branch a single entry in a table.
+My all time favorite feature of LyX, especially as an instructor, is *branches*. You can create one branch for student space and another branch for yourself. I can share prompts with students and keep answers and talking points for myself. There's no repeating yourself - you just put your comments in another branch and you're good to go. Branches are precision instruments, too.  You can just as easily branch a paragraph, a single character, or even single entry in a table if you want to. 
 
-But the incredible people at RStudio have created an keep adding features to their own IDE. RMarkdown continues to develop and, *gulp*, it can do almost everything that LyX and LaTeX can do.  Readability? Check! Table support? Check! Lists, images, referencing? Check! Check! Check!
+At the same time, the incredible people at [RStudio](https://www.rstudio.com/) keep adding features to their own IDE: RStudio Desktop. It's arguably the industry standard IDE for anyone working in R. Its community is engaged and enthusiastic so RStudio and RMarkdown is constantly developing and improving and, *gulp*, it can do almost everything that LyX+LaTeX can do.  Readability? Check! Table support? Check! Lists, images, referencing? Check! Check! Check![^1] 
 
-And so, like a fanatic, I'm holding out because of LyX's branches. I had dabbled in it before.  I knew you could parameterise code chunks so some chunks would evaluate and others would not.  With the ability to call images from a chunk, it's almost there.  Some plain text would, theoretically be possible.  But how would you pass an equation or a table?
+[^1]: In many ways it can many things LyX and LaTeX don't do very well.  I've never had much success with [Sweave](https://wiki.lyx.org/Glossary/Sweave) or doing algebra with [Maxima](https://maxima.sourceforge.io/), for example.
+
+So, like a fanatic, I'm holding out because of LyX's branches. I had briefly looked into parameterising code chunks in R.  I know you can some evaluate some chunk and not others  With the ability to call images from a chunk, RMarkdown is almost almost there.  I could `kable` a table, but I'd have to construct an object first. Meh. And text would be annoying. Plain text through `paste` is fine but  But how would you pass an equation, a proof, or a table?
 
 As part of my peek into social media, I decided to ask Twitter.  I wasn't sure I'd get a reply, in truth: A few of my past questions fell on deaf ears but when [@Kierisi](https://twitter.com/kierisi) retweeted my question, the internet started talking to me! 😮
 
