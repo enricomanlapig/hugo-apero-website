@@ -99,6 +99,6 @@ This is how you do it, people.  Just create a parameter to toggle in your YAML a
 
 The only little wrinkle, if you could call it that, is that I don't think you can embed new R chunks in the `asis` chunk. So no emoji fonts or calculations.  That might be a little too Inception-y anyway.  
 
-Now -- finally, after how many years -- I feel confident I can, finally transition from LyX to RMarkdown. What a relif.
+Now -- finally, after how many years -- I feel confident I can, finally transition from LyX to RMarkdown. What a relief.
 
 Thank you Twitter! 😙 Now, time to start moving things over!
