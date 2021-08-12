@@ -44,22 +44,22 @@ First, you will need to include your branching switch in your YAML. I've called 
 
 ![code chunk with yaml](./images/YAML.png)
 
-Then, tell the code chunk you want to toggle to use LaTeX rather than pandoc with an `include=` option.
+Then, tell the code chunk you're toggling to use LaTeX rather than pandoc with an `include=` option.
 
 ![code chunk for vertical space](./images/vspace_chunk.png)
 
 
 The code `\\vspace{5cm}` inserts a vertical space where students can write. *This* is LaTeX! Well, sort of. It has an extra backslash so R knows I really mean to insert a backslash.
 
-For my notes, we can pass `!is_notes`. Again, we're writing plain LaTeX but inserting an additional backslash every time.
+For instructor notes, we can pass `!params$is_handout`. Again, we're writing in plain LaTeX and inserting an additional backslashes every time.
 
 ![code chunk with equation array](./images/eqnarray_chunk.png)
 
-We can do tables, too! Here's a LaTeX table with a blank in the bottom right cell.
+We can do tables, too. Here's a LaTeX table with a blank in the bottom right cell.
 
 ![two code chunks with blank and filled tables](./images/tbl_chunk.png)
 
-Notice again that, I've asked for `!params$is_handout`, since answer should only be available to me.
+Notice again that, I've asked for `!params$is_handout`, since the answer should only be available to me.
 
 So it's possible!
 
@@ -69,11 +69,11 @@ All in all, it's pretty close! Thank you internet!
 
 For all of these little code snippets together, head over to [my GitHub](https://github.com/enricomanlapig/useful_snippets/tree/master/branching_with_latex).
 
-Even though it's possible, there's enough friction that I'm not a 100% sure it's worth moving over yet. 
+Still, even though it's possible, there's enough friction that I'm not a 100% sure it's worth moving over yet.
 
 ### Second thought
 
-I discovered now that there are [other engines](https://bookdown.org/yihui/rmarkdown/language-engines.html) that might do what I want. For example, there are `exercise` and `solution` engines in `bookdown`. This might be the way to go but I don't know `bookdown` (yet). It's not clear whether tables and images will be easy to work with, either.
+I discovered that there are [other engines](https://bookdown.org/yihui/rmarkdown/language-engines.html) that might do what I want. For example, there are `exercise` and `solution` engines in `bookdown`. This might be the way to go but I don't know `bookdown` (yet). It's also not clear whether tables and images will be easy to work with.
 
 The more I think about it, I wonder how hard it would be to create an RMarkdown engine. A code chunk like this would be ideal.
 
@@ -81,24 +81,24 @@ The more I think about it, I wonder how hard it would be to create an RMarkdown 
     
 ### Third thought
 
-I went back to the thread and asked if my this engine was possible.  I was really worried about this because I was certain the internet wasn't going to be interested in talking to me anymore.  But this morning I got another reply from [yoni sidi (\@yoniceedee)](https://twitter.com/yoniceedee).
+I went back to the thread and asked if this engine was possible.  I was really worried about this because I was certain the internet wasn't going to be interested in talking to me anymore.  But this morning I got another reply from [yoni sidi (\@yoniceedee)](https://twitter.com/yoniceedee).
 
 How about a chunk option `results = "asis"`?
 
-This had me very excited.  In principle, `asis` will render the output of the chunk verbatim.  So, all we need to do is get the output of the chunk to be markdown.  Output... what gives me control over output? Well, `cat` and `paste` are obvious choices, since they can write anything, but this leaves me in a similar position to the LaTeX approach where we have to remind R not to escape when it encounters a special characters.  
+This had me very excited.  In principle, `asis` will render the output of the chunk verbatim.  So, all we need to do is get the output of the chunk to be markdown.  Output... what gives me control over output? Well, `cat()` and `paste()` are obvious choices, since they can write anything, but this leaves me in a similar position to the LaTeX approach, where we have to remind R not to escape when it encounters a special characters.  
 
 
 
 ### Fourth thought
 
-The `asis` idea was tantalizingly close! And I remembered that RStudio ships with an `asis` engine.  Holy moly! That's it!
+The `asis` idea was tantalizingly close! And it reminded me that RStudio ships with an `asis` engine.  Holy moly! That's it!
 
 ![screenshot of code with asis engine](./images/asis_code_chunk.png)
 
-This is how you do it, people.  Just create a parameter to toggle in your YAML and `asis` will handle the rest. You can create parameters and chunks to customize the output for the instructor, handouts, teaching assistants, and more. And it's so easy.
+This is how you do it, people.  Just create a parameter to toggle in your YAML and `asis` will handle the rest. You can create parameters to customize which chunks are output for instructor, handouts, teaching assistants, and or whatever And it's so easy!
 
-The only little wrinkle, if you could call it that, is that I don't think you can embed new R chunks in the `asis` chunk. So no emoji fonts or calculations.  That might be a little too Inception-y anyway.  
+The only little wrinkle, if you could call it that, is that I don't think you can embed new R chunks in the `asis` chunk. So no emoji fonts or calculations, which belong in dedicated R-engine chunks.  That might be a little too Inception-y anyway.  
 
 Now -- finally, after how many years -- I feel confident I can, finally transition from LyX to RMarkdown. What a relief.
 
-Thank you Twitter! 😙 Now, time to start moving things over!
+Thank you kind people of Twitter! 😙 It's time to start moving things over!
