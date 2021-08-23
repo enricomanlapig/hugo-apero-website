@@ -102,3 +102,10 @@ The only little wrinkle, if you could call it that, is that I don't think you ca
 Now -- finally, after how many years -- I feel confident I can, finally transition from LyX to RMarkdown. What a relief.
 
 Thank you kind people of Twitter! `r emojifont::emoji("kissing_smiling_eyes")` It's time to start moving things over!
+
+
+### Fifth thought
+
+The `asis` engine is sooooo great!  This is exactly the right way to do this.
+
+I'm enjoying it so much that I wrote a little add-in to so I can assign a keyboard shortcut to it.  Now I can write markdown first and later decide which bits to put into chunks to hide or share with a quick `ctrl-alt-p`. This has really changed my workflow and, for the first time, I feel like I'm actually using R-Studio properly.  Want to try it, too? Behold! There's now a new add-in called "asischunk" in [Dean Attali's add in list](https://github.com/daattali/addinslist). If you `install.packages("addinslist")` you can install it from my [GitHub repository](https://github.com/enricomanlapig/asischunk).
